@@ -41,6 +41,7 @@ export class FetchCryptoDataTool extends BaseTool {
 
 		try {
 			const res = await fetch(url, {
+				method: "GET",
 				headers: { Accept: "application/json" },
 			});
 			if (!res.ok) {

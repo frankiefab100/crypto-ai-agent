@@ -38,6 +38,7 @@ export class FetchCoindeskNewsTool extends BaseTool {
 		try {
 			const res = await fetch(apiUrl, {
 				headers: {
+					method: "GET",
 					Accept: "application/json",
 					Authorization: `Bearer ${process.env.COINDESK_API_KEY}`,
 				},
