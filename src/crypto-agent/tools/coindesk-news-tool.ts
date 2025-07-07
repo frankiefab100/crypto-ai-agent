@@ -21,13 +21,18 @@ export class FetchCoindeskNewsTool extends BaseTool {
 			description: this.description,
 			parameters: {
 				type: "object",
-				properties: {},
+				properties: {
+					count: {
+						type: "integer",
+						description: "Number of news items to return (default 5, max 10).",
+					},
+				},
 				required: [],
 			},
 		};
 	}
 
-	async runAsync(_context: ToolContext) {
+	async runAsync(args: { count?: number }, _context: ToolContext) {
 		const apiUrl =
 			"https://data-api.coindesk.com/news/v1/article/list?lang=EN&limit=10";
 		try {
@@ -49,7 +54,8 @@ export class FetchCoindeskNewsTool extends BaseTool {
 			}
 			const newsReport: NewsItem[] = data.Data;
 
-			const topNews = newsReport.slice(0, 5);
+			const count = Math.max(1, Math.min(args.count ?? 5, 10));
+			const topNews = newsReport.slice(0, count);
 			const formatted = topNews
 				.map(
 					(item, i) =>

@@ -44,7 +44,7 @@ async function main() {
 							console.log("Response🤖:", part.text);
 						}
 						if (part.functionResponse) {
-							part.functionResponse.response;
+							console.log("🔎 Tool Result:", part.functionResponse.response);
 							break;
 						}
 						if (part.functionCall) {
