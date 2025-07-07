@@ -7,6 +7,7 @@ export const envSchema = z.object({
 	GOOGLE_API_KEY: z.string(),
 	LLM_MODEL: z.string(),
 	COINGECKO_API_KEY: z.string(),
+	COINDESK_API_KEY: z.string(),
 });
 
 export const env = envSchema.parse(process.env);

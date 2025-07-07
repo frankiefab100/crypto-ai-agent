@@ -1,6 +1,6 @@
 import readline from "node:readline";
 import { InMemorySessionService, Runner } from "@iqai/adk";
-import { cryptoAgent } from "./agents/crypto-agent";
+import { cryptoAgent } from "./crypto-agent";
 
 async function main() {
 	const appName = "crypto-ai-agent";
