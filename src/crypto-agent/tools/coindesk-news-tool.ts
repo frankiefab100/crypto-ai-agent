@@ -2,27 +2,9 @@ import { writeFile } from "node:fs/promises";
 import { BaseTool, type ToolContext } from "@iqai/adk";
 import type { FunctionDeclaration } from "@iqai/adk";
 import * as dotenv from "dotenv";
-import { formatDate } from "../../utils";
+import type { CoindeskApiResponse, NewsItem } from "../../lib/types";
+import { formatDate } from "../../lib/utils";
 dotenv.config();
-
-type NewsItem = {
-	TYPE: string;
-	ID: number;
-	GUID: string;
-	PUBLISHED_ON: number;
-	PUBLISHED_ON_NS?: number | null;
-	IMAGE_URL?: string;
-	TITLE: string;
-	SUBTITLE?: string | null;
-	AUTHORS?: string;
-	URL: string;
-	SOURCE_ID?: number;
-	BODY?: string;
-};
-
-type CoindeskApiResponse = {
-	Data: NewsItem[];
-};
 
 export class FetchCoindeskNewsTool extends BaseTool {
 	constructor() {

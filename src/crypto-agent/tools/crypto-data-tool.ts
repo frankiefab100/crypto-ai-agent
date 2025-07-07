@@ -1,20 +1,6 @@
 import { BaseTool, type ToolContext } from "@iqai/adk";
 import type { FunctionDeclaration } from "@iqai/adk";
-
-type CoinGeckoCoinResponse = {
-	name: string;
-	symbol: string;
-	market_data?: {
-		current_price?: { usd?: number };
-		market_cap?: { usd?: number };
-		total_volume?: { usd?: number };
-	};
-	categories?: string[];
-	last_updated?: string;
-	links?: {
-		homepage?: string[];
-	};
-};
+import type { CoinGeckoCoinResponse } from "../../lib/types";
 
 export class FetchCryptoDataTool extends BaseTool {
 	constructor() {

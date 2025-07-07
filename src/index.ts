@@ -17,7 +17,7 @@ async function main() {
 	});
 
 	rl.question(
-		"Ask your crypto question (e.g. 'What is the price of solana?'): ",
+		"Ask your crypto question (e.g. 'What is the price of solana or the latest crypto news?'): ",
 		async (userInput) => {
 			rl.close();
 			const query = userInput?.trim()
