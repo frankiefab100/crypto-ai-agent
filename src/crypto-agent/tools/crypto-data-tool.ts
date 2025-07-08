@@ -2,7 +2,7 @@ import { BaseTool, type ToolContext } from "@iqai/adk";
 import type { FunctionDeclaration } from "@iqai/adk";
 import type { CoinGeckoCoinResponse } from "../../lib/types";
 
-export class FetchCryptoDataTool extends BaseTool {
+export class CryptoDataTool extends BaseTool {
 	constructor() {
 		super({
 			name: "fetch_crypto_data",

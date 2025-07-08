@@ -6,7 +6,7 @@ import type { CoindeskApiResponse, NewsItem } from "../../lib/types";
 import { formatDate } from "../../lib/utils";
 dotenv.config();
 
-export class FetchCoindeskNewsTool extends BaseTool {
+export class CoindeskNewsTool extends BaseTool {
 	constructor() {
 		super({
 			name: "fetch_coindesk_news",

@@ -6,7 +6,7 @@ A conversational AI agent for cryptocurrency insights, powered by [`@iqai/adk`](
 
 - **Conversational CLI**: Ask multiple questions in a single session without need to restart the process.
 - **Crypto Data Queries**: Get real-time prices, market cap, category and volume for cryptocurrencies/tokens.
-- **Crypto News**: Fetch the latest news or specific number of articles from [Coindesk](https://coindesk.com).
+- **Crypto News**: Fetch the latest curated news or specific number of articles from [Coindesk](https://coindesk.com).
 
 ## Development Tools
 
