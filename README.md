@@ -46,39 +46,39 @@ npx tsx src/index.ts
 
 ## Environment Variables Setup
 
-Create a `.env` file in the project root and fill in your credentials:
+Create a `.env` file in the root directory with the necessary variables and fill in your credentials:
 
 ```env
-LLM_MODEL=                 # The language model (e.g., `gemini-2.5-flash`)
-GOOGLE_API_KEY=            # Gemini LLM Model API key
-COINGECKO_API_KEY=         # Coingecko Demo plan API key
-COINDESK_API_KEY=          # Coindesk Data API key
+LLM_MODEL=your-llm-model                   # Large Language model (e.g., `gemini-2.5-flash`)
+GOOGLE_API_KEY=your-google-api-key         # Gemini LLM Model API key
+COINGECKO_API_KEY=your-coingecko-api-key   # Coingecko Demo plan API key
+COINDESK_API_KEY=your-coindesk-api-key     # Coindesk Data API key
 ```
 
-## Folder Structure
+## Project Structure
 
 The main agent code lives in `src/index.ts`. Agents and their tools are organized as follows:
 
 ```
 ├── src/
-│   ├── crypto-agent/
-│   │       ├── index.ts
+│   ├── crypto-agent/                           
+│   │       ├── index.ts                        # AI agent configuration
 │   │       └── tools/
-│   │           ├── crypto-data-tool.ts
-│   │           └── coindesk-news-tool.ts
+│   │           ├── crypto-data-tool.ts         # Cryptocurrency data tool
+│   │           └── coindesk-news-tool.ts       # Coindesk news/articles tool
 │   ├── lib/
-|   ├── env.ts
-│   │   ├── types.ts
-│   │   └── utils.ts
-│   └── index.ts
+|   |   ├── env.ts                              # Environment variables schema
+│   │   ├── types.ts                            # Type definitions
+│   │   └── utils.ts                            # Utility functions
+│   └── index.ts                                # CLI logic for user interaction
 ```
 
 ## Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Make your changes and commit: `git commit -m "Add your feature"`
+4. Push to your fork: `git push origin feature/your-feature`
 5. Open a Pull Request
 
 ## License
@@ -87,6 +87,6 @@ This project is licensed under the [MIT License](./LICENSE) .
 
 ## Resources
 
-- [ADK Typescript](https://github.com/IQAICOM/adk-ts)
+- [ADK Typescript Library](https://adk.iqai.com/)
 - [Coingecko Public API](https://docs.coingecko.com/v3.0.1/reference)
 - [Coindesk Data API Docs](https://developers.coindesk.com/documentation/data-api/introduction)
