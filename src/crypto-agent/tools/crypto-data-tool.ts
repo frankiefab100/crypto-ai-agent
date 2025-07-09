@@ -7,7 +7,7 @@ export class CryptoDataTool extends BaseTool {
 		super({
 			name: "fetch_crypto_data",
 			description:
-				"A crypto agent that fetches real-time crypto data. For any user input that is a cryptocurrency name or symbol (like 'solana' or SOL), use the fetch_crypto_data tool and pass the token name as the 'token' argument. If the user input is ambiguous or not a token, ask for clarification.",
+				"Fetches real-time cryptocurrency data using the CoinGecko API. Processes and formats the data for the requested token and returns key market information.",
 		});
 	}
 
