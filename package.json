@@ -1,11 +1,12 @@
 {
-	"name": "crypto-agent",
+	"name": "Crypto-AI-agent",
 	"version": "0.0.1",
-	"description": "crypto-agent is an ai agent that make decisions such as get current and historical token data from CoinGecko",
+	"description": "An AI agent  that leverages the ADK TypeScript library and tools to provide real-time cryptocurrency prices and market data, and also deliver the latest curated news articles from Coindesk in the terminal",
 	"main": "dist/index.js",
 	"scripts": {
 		"build": "tsc",
 		"dev": "tsx watch src/index.ts",
+		"start:chat": "tsx src/index.ts",
 		"start": "node dist/index.js",
 		"clean": "rimraf dist",
 		"prebuild": "pnpm clean",
@@ -20,15 +21,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/IQAICOM/adk-agent-starter.git"
+		"url": "git+https://github.com/frankiefab100/crypto-ai-agent.git"
 	},
-	"keywords": ["ai", "agent", "mcp", "adk-ts", "IQAI"],
+	"keywords": ["ai", "agent", "ai agent", "mcp", "adk-ts", "IQAI"],
 	"author": "IQAI",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/IQAICOM/adk-agent-starter/issues"
+		"url": "https://github.com/frankiefab100/crypto-ai-agent/issues"
 	},
-	"homepage": "https://github.com/IQAICOM/adk-agent-starter#readme",
+	"homepage": "https://github.com/frankiefab100/crypto-ai-agent#readme",
 	"dependencies": {
 		"@google/genai": "^1.8.0",
 		"@iqai/adk": "^0.1.1",
