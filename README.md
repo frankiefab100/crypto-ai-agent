@@ -1,12 +1,12 @@
 # Crypto AI Agent
 
-A conversational AI agent for cryptocurrency insights, powered by [`@iqai/adk`](https://github.com/IQAICOM/adk-ts). This agent can answer crypto-related questions, fetch a coin/token price, market cap, volume or category and retrieve the latest news from Coindesk directly from your terminal.
+A conversational AI agent for cryptocurrency insights, powered by [`@iqai/adk`](https://github.com/IQAICOM/adk-ts). This agent can answer crypto-related questions, fetch a coin/token price, market cap, volume or category and retrieve the latest news from CoinDesk directly from your terminal.
 
 ## Features
 
 - **Conversational CLI**: Ask multiple questions in a single session without need to restart the process.
 - **Crypto Data Queries**: Get real-time prices, market cap, category and volume for cryptocurrencies/tokens.
-- **Crypto News**: Fetch the latest curated news or specific number of articles from [Coindesk](https://coindesk.com).
+- **Crypto News**: Fetch the latest curated news or specific number of articles from [CoinDesk](https://coindesk.com).
 
 ## Development Tools
 
@@ -21,8 +21,8 @@ A conversational AI agent for cryptocurrency insights, powered by [`@iqai/adk`](
 
 - Node.js 18+ and PNPM installed
 - LLM Model API Key (e.g GPT, Gemini, Claude, etc)
-- [Coingecko API Key](https://www.coingecko.com/en/developers)
-- [Coindesk API Key](https://developers.coindesk.com/documentation/data-api/introduction)
+- [CoinGecko API Key](https://www.coingecko.com/en/developers)
+- [CoinDesk API Key](https://developers.coindesk.com/documentation/data-api/introduction)
 
 Clone the repository:
 
@@ -61,7 +61,7 @@ The main agent code lives in `src/index.ts`. Agents and their tools are organize
 
 ```
 ├── src/
-│   ├── crypto-agent/                           
+│   ├── agent/                           
 │   │       ├── index.ts                        # AI agent configuration
 │   │       └── tools/
 │   │           ├── crypto-data-tool.ts         # Cryptocurrency data tool
@@ -88,5 +88,5 @@ This project is licensed under the [MIT License](./LICENSE) .
 ## Resources
 
 - [ADK Typescript Library](https://adk.iqai.com/)
-- [Coingecko Public API](https://docs.coingecko.com/v3.0.1/reference)
-- [Coindesk Data API Docs](https://developers.coindesk.com/documentation/data-api/introduction)
+- [CoinGecko Public API](https://docs.coingecko.com/v3.0.1/reference)
+- [CoinDesk Data API Docs](https://developers.coindesk.com/documentation/data-api/introduction)
